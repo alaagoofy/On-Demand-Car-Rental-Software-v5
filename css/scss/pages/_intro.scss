@@ -1,0 +1,55 @@
+.loading-bar {
+height: 5px;
+background-color: $color-primary;
+width: 100%;
+position: fixed;
+top: 0;
+bottom: 0;
+z-index: 2000;
+transition: all 5s;
+animation: loading-bar 5s 
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-gray-dark;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    color: #565e6f;
+    font-size: 1.3rem;
+
+    &__loading {
+        color: $white;
+    }
+
+    .slogan {
+        text-transform: uppercase;
+        h1 {
+            font-size: 4.1rem;
+            letter-spacing: 0.8rem;
+        }
+        small {
+            letter-spacing: 0.8rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .copyright {
+        img {
+            height: 2.5rem;
+            display: block;
+            margin: 0 auto 0.5rem;
+            
+        }
+        p {
+            margin: 0;
+            padding:0 ;
+        }
+    }
+}
