@@ -241,8 +241,8 @@
                     <img src="images/reports.png" alt="Reports">
                 </a>
 
-                  <!------------------------------DROP DOWN-->
-                  <div class="drop-down-nav">
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
                     <div class="arrow-left"></div>
                     <ul class="drop-down-nav__menu">
 
@@ -337,22 +337,22 @@
                 <a href="#" class="menu-link" title="Settings">
                     <img src="images/settings.png" alt="Settings">
                 </a>
-                 <!------------------------------DROP DOWN-->
-                 <div class="drop-down-nav multi">
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav multi">
                     <div class="arrow-left"></div>
                     <ul class="drop-down-nav__menu">
 
                         <li class="drop-down-nav__item">
                             <a href="#" class="drop-down-nav__link  arrow-right">
                                 Location Information </a>
-                                    <!------------------------------DROP DOWN-->
+                            <!------------------------------DROP DOWN-->
                             <div class="drop-down-nav">
                                 <div class="arrow-left"></div>
                                 <ul class="drop-down-nav__menu  dark">
 
                                     <li class="drop-down-nav__item">
                                         <a href="#" class="drop-down-nav__link">
-                                           Locations </a>
+                                            Locations </a>
                                     </li>
 
                                     <li class="drop-down-nav__item">
@@ -371,14 +371,14 @@
                         <li class="drop-down-nav__item">
                             <a href="#" class="drop-down-nav__link  arrow-right">
                                 Users </a>
-                                   <!------------------------------DROP DOWN-->
+                            <!------------------------------DROP DOWN-->
                             <div class="drop-down-nav">
                                 <div class="arrow-left"></div>
                                 <ul class="drop-down-nav__menu  dark">
 
                                     <li class="drop-down-nav__item">
                                         <a href="#" class="drop-down-nav__link">
-                                           Locations </a>
+                                            Locations </a>
                                     </li>
 
                                     <li class="drop-down-nav__item">
@@ -397,14 +397,14 @@
                         <li class="drop-down-nav__item">
                             <a href="#" class="drop-down-nav__link  arrow-right">
                                 Rates </a>
-                                   <!------------------------------DROP DOWN-->
+                            <!------------------------------DROP DOWN-->
                             <div class="drop-down-nav multi">
                                 <div class="arrow-left"></div>
                                 <ul class="drop-down-nav__menu  dark">
 
                                     <li class="drop-down-nav__item">
                                         <a href="#" class="drop-down-nav__link">
-                                           Locations </a>
+                                            Locations </a>
                                     </li>
 
                                     <li class="drop-down-nav__item">
@@ -418,7 +418,7 @@
                                     </li>
                                     <li class="drop-down-nav__item">
                                         <a href="#" class="drop-down-nav__link">
-                                           Locations </a>
+                                            Locations </a>
                                     </li>
 
                                     <li class="drop-down-nav__item">
@@ -569,14 +569,14 @@
                     <div class="stats-res">
                         <h3 class="head-3">
                             <a href="#">Reservations</a></h3>
-                        <a class="stats-res--number">
+                        <a class="stats-res--number count">
                             <!-- <svg>
                                 <use xlink:href="images/sprite.svg#icon-rank"></use>
                             </svg> -->
                             505
                         </a>
                         <div class="stats-res-text">
-                            <span>15</span> in this month
+                            <span class="count">15</span> in this month
                         </div>
 
                     </div>
@@ -584,13 +584,13 @@
                     <div class="stats-res">
                         <h3 class="head-3">
                             <a href="#">Rentals</a></h3>
-                        <a class="stats-res--number">
+                        <a class="stats-res--number count">
                             <!-- <img src="images/rent.png" alt="" class="rental-icon"> -->
 
                             45
                         </a>
                         <div class="stats-res-text">
-                            <span>25</span> in this month
+                            <span class="count">25</span> in this month
                         </div>
                     </div>
 
@@ -598,14 +598,14 @@
                     <div class="stats-res">
                         <h3 class="head-3">
                             <a href="#">Vehicles</a></h3>
-                        <a class="stats-res--number">
+                        <a class="stats-res--number count">
                             <!-- <svg class="vehicle-icon">
                                 <use xlink:href="images/sprite.svg#icon-car-two"></use>
                             </svg> -->
                             120
                         </a>
                         <div class="stats-res-text">
-                            <span>7</span> in this month
+                            <span class="count">7</span> in this month
                         </div>
                     </div>
 
@@ -988,6 +988,20 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
