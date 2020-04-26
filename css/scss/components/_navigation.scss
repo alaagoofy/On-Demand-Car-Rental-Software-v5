@@ -1,0 +1,64 @@
+.nav {
+    width: 4.5rem;
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    z-index: 10;
+    @include responsive(tab-port) {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0 0 0;
+        list-style: none;
+
+        li {
+            position: relative;
+        }
+
+        &-link {
+            display: inline-block;
+            width: 4.4rem;
+            height: 5rem;
+            @include center-el;
+            margin-left: 0.2rem;
+
+            img {
+                width: 2rem;
+                position: relative;
+                z-index: 2;
+            }
+
+            .vehicles {
+                width: 3rem;
+            }
+
+            svg {
+                width: 2.6rem;
+                height: 2.6rem;
+                fill: $color-gray-light;
+            }
+
+            .rentals {
+                width: 2.6rem;
+                display: block;
+                margin-left: 0.2rem;
+            }
+
+            &.active,
+            &:hover {
+                background: url(/images/menu-hover.png) no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .logout {
+            padding-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+//---------------------------------------------------DROP DOWN MENU
+.drop {
+  position: relative;
+}
+
+.drop-down {
+  padding-top: 1rem;
+  position: absolute;
+  top: 3rem;
+  left: -315%;
+  min-width: 19rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(5rem);
+
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    border-bottom: 0.7rem solid $color-gray-dark;
+    margin: 0 auto -0.2rem;
+  }
+
+  &__menu {
+    list-style: none;
+    background-color: $color-gray-dark;
+    box-shadow: $shadow;
+    border-radius: 0.5rem;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited,
+  li:hover > a {
+    display: block;
+    padding: 1.3rem 1.5rem 1.3rem 1rem;
+    border-bottom: 1px solid $black;
+    background-image: linear-gradient(120deg, transparent 0, transparent 50%, $color-primary 50%);
+    background-size: 220%;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.3rem;
+    color: $gray;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+
+    svg {
+      width: 2rem;
+      height: 1.8rem;
+      display: inline-block;
+      margin-right: 0.5rem;
+      &.car_rental {
+        width: 2.5rem;
+        height: 1.8rem;
+      }
+    }
+  }
+
+  &__item:last-child a {
+    border: none;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-position: 100%;
+    color: $white;
+    transform: translateX(0.5rem);
+    box-shadow: 0 0.6rem 0.7rem rgba($black, 15%);
+    border: none;
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+div:hover > .drop-down,
+li:hover > .drop-down-nav {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+
+}
+
+//---------------------------------------------------DROP DOWN NAVIGATION
+.drop-down-nav {
+  padding-top: 1rem;
+  position: absolute;
+  top: -0.4rem;
+  left: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  
+  transform: translateX(50%);
+  display: grid;
+  grid-template-columns: 0.7rem max-content;
+  align-items: start;
+  justify-content: flex-start;
+
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 0.7rem solid transparent;
+    border-bottom: 0.7rem solid transparent;
+    border-right: 0.7rem solid $color-gray-dark;
+    margin: 1.2rem auto -0.2rem;
+  }
+
+  &__menu {
+    list-style: none;
+    background-color: $color-gray-dark;
+    box-shadow: $shadow;
+    border-radius: 0.5rem;
+
+    &.dark {
+      background-color: $dark;
+      a {
+        border-bottom: 1px solid $color-gray-darker;
+      }
+    }
+  }
+
+  &.multi {
+    top: -15vh;
+    
+  }
+
+  &.multi> .arrow-left {
+    margin-top: 10rem;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    display: block;
+    padding: 1rem 2.5rem;
+    border-bottom: 1px solid $black;
+    background-image: linear-gradient(120deg, transparent 0, transparent 50%, $color-primary 50%);
+    background-size: 225%;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.3rem;
+    color: $gray;
+    position: relative;
+    &.arrow-right::after {
+      @include after-before;
+      content: "";
+      right: 0.8rem;
+      left: auto;
+      top:1.5rem;
+      width: 0.9rem;
+      height: 1.5rem;
+      background: url(/images/arrow-right.png) no-repeat;
+      background-size: 0.5rem 1.2rem;
+    }
+    svg {
+      width: 2rem;
+      height: 1.8rem;
+      display: inline-block;
+      margin-right: 0.5rem;
+      &.car_rental {
+        width: 2.5rem;
+        height: 1.8rem;
+      }
+    }
+  }
+
+  li:last-child > a {
+    border: none;
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active,
+  li:hover > a {
+    background-position: 100%;
+    color: $white;
+    transform: translateX(0.5rem);
+    box-shadow: 0 0.6rem 0.7rem rgba($black, 15%);
+    border: none;
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+//---------------------------------------------------BOOTSTRAP CUSTOM DROP DOWN
+.dropdown-menu {
+  background-color: $color-gray-dark;
+  min-width: 19rem;
+  border-radius: 0.5rem;
+  top: 1.5rem !important;
+  border: none;
+  a {
+    display: block;
+    padding: 0.7rem 1.5rem 0.7rem 1rem;
+    border-bottom: 1px solid $black;
+    background-image: linear-gradient(120deg, transparent 0, transparent 50%, $color-primary 50%);
+    background-size: 220%;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.3rem;
+    color: $gray;
+    &:hover,
+    &:active,
+    &.active {
+      background-position: 100%;
+      color: $white;
+      transform: translateX(0.5rem);
+      box-shadow: 0 0.6rem 0.7rem rgba($black, 15%);
+      border: none;
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  li:last-child a {
+    border: none;
+  }
+}

@@ -1,0 +1,31 @@
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.opacity {
+    opacity: 0.4;
+}
+
+.drop-down-arrow {
+    width: 1rem;
+    height: 1rem;
+}
+.res-img {
+    max-width: 100%;
+}
+.bg {
+    padding: 2rem 1.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
+    overflow: hidden;
+
+    &-white {
+        background-color: $white;
+    }
+    &-darks {
+        background-color: $color-gray-dark;
+    }
+}

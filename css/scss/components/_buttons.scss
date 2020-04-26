@@ -1,0 +1,73 @@
+.btn {
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 0.7rem;
+    position: relative;
+    border: none;
+    z-index: 5;
+    //----------------------------------------------------Pseudo Button classes for hover effect
+    &::after {
+        @include after-before;
+        display: inline-block;
+        z-index: -1;
+        border-radius: 0.4rem;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &:hover {
+        box-shadow: $shadow;
+        &::after {
+            transform: scaleX(1.2) scaleY(1.4);
+            opacity: 0;
+        }
+    }
+    &-primary {
+        background-color: $color-primary;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &-success {
+        background-color: $color-secondary;
+
+        &::after {
+            background-color: $color-secondary;
+        }
+    }
+
+    &-default {
+        background-color: $color-gray-dark;
+        color: $color-gray-lighter;
+        &::after {
+            background-color: $color-gray-dark;
+        }
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &-small {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    &-tiny {
+        border-radius: 0.3rem;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.link {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    &-success {
+        color: $color-secondary;
+    }
+
+    &-danger {
+        color: $error;
+    }
+}

@@ -1,0 +1,179 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.5rem;
+    background-color: $color-gray-dark;
+    display: grid;
+    grid-template-columns: 4fr 1.2fr 4fr;
+    align-items: center;
+    z-index: 200;
+    @include responsive(phone) {
+        grid-template-columns: 3fr 2fr 0.5fr;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        .menu-icon {
+            width: 5rem;
+            padding: 0 2rem;
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        .logo-img {
+            height: 3rem;
+            padding: 0 2rem;
+            @include responsive(phone) {
+                height: 2.5rem;
+                padding: 0 1rem 0 0;
+            }
+        }
+    }
+
+    &__quick-links {
+        @include center-el;
+        justify-content: space-around;
+        border-left: 1px solid $black;
+        border-right: 1px solid $black;
+        height: 100%;
+        svg {
+            width: 2.6rem;
+            height: 2.7rem;
+            @include responsive(phone) {
+                width: 2.2rem;
+                height: 2.3rem;
+            }
+        
+        }
+    }
+
+    &__right-links {
+        display: flex;
+        color: $color-gray-lighter;
+        justify-content: flex-end;
+        align-items: center;
+        .location {
+            padding: 0 3rem;
+            border-right: 1px solid #4a4a4a;
+
+            @include responsive(phone) {
+                padding: 0 1rem;
+                border: none;
+                a span,
+                .drop-down-arrow {
+                    display: none;
+                }
+            }
+            &-icon {
+                width: 2.3rem;
+                height: 2.3rem;
+            }
+
+            & > a,
+            & >  a:link,
+            & >  a:visited {
+                color: $color-gray-lighter;
+                font-size: 1.4rem;
+                &:hover,
+                svg {
+                    color: $white;
+                    fill: $white;
+                }
+            }
+        }
+
+        .help {
+            padding: 0 3rem;
+            border-right: 1px solid #4a4a4a;
+            svg {
+                width: 2.3rem;
+                height: 2.3rem;
+            }
+            @include responsive(phone) {
+                display: none;
+            }
+        }
+
+        .quick-menu {
+            padding: 0 3rem;
+            @include responsive(phone) {
+                display: none;
+            }
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    @include responsive(phone) {
+      flex-direction: column;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        &-icon {
+            width: 6rem;
+        }
+    }
+
+    .breadcrumbs {
+        justify-self: flex-end;
+       
+        @include center-el;
+        //-----------------------------------Responsive
+        @include responsive(tab-port) {
+            justify-content: flex-start ;
+            padding-left:1.5rem;
+            margin-bottom: -1rem;
+        }
+        &__list {
+            list-style: none;
+            display: flex;
+        }
+
+        &__item:not(:last-child)::after {
+            display: inline;
+            content: "/";
+            padding: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        &__link {
+            color: $color-gray-dark;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            vertical-align: middle;
+            font-weight: 600;
+            &:hover {
+                color: $color-primary;
+            }
+
+            &.active {
+                color: $color-gray-light;
+            }
+
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                display: inline-block;
+                margin-top: -0.4rem;
+                margin-right: 0.5rem;
+            }
+        }
+
+        &__item:last-child a {
+            color: $color-gray-light;
+            font-weight: 300;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//---------------------------------ABSTRACTS
+@import 'scss/abstracts/variables';
+@import 'scss/abstracts/mixins';
+
+//---------------------------------BASE
+@import 'scss/base/animations';
+@import 'scss/base/base';
+@import 'scss/base/typography';
+@import 'scss/base/utilities';
+
+//---------------------------------COMPONENTS
+@import 'scss/components/navigation';
+@import 'scss/components/buttons';
+@import 'scss/components/table';
+@import 'scss/components/drop-down';
+
+//---------------------------------LAYOUT
+@import 'scss/layout/header';
+
+//---------------------------------PAGES
+@import 'scss/pages/intro';
+@import 'scss/pages/home';
