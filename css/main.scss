@@ -13,6 +13,8 @@
 @import 'scss/components/buttons';
 @import 'scss/components/table';
 @import 'scss/components/drop-down';
+@import 'scss/components/tabs';
+@import 'scss/components/forms';
 
 //---------------------------------LAYOUT
 @import 'scss/layout/header';
@@ -20,3 +22,4 @@
 //---------------------------------PAGES
 @import 'scss/pages/intro';
 @import 'scss/pages/home';
+@import 'scss/pages/others';

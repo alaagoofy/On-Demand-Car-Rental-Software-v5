@@ -1,0 +1,36 @@
+.nav-tabs {
+    width: 100%;
+    list-style: none;
+    background-color: $color-gray-dark;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    a {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin-right: 1.5rem;
+        padding: 1.3rem 4rem;
+        border-radius: 0.5rem;
+        display: inline-block;
+    }
+    li:hover a,
+    li a.active {
+        background-color: $white;
+        color: $color-gray-dark;
+        box-shadow: $shadow;
+    }
+
+    &:hover li:not(:hover) a {
+        background-color: transparent;
+        color: $white;
+        box-shadow: none;
+    }
+}
+
+.tab-content {
+    padding-top: 6.5rem;
+}

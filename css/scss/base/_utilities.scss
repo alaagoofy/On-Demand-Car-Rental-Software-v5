@@ -16,16 +16,42 @@
 .res-img {
     max-width: 100%;
 }
+
+.ruler {
+    width: 100%;
+    display: table;
+    height: 1px;
+    background-color: lighten($color-gray-light, 30%);
+    margin: 3rem 0;
+    clear: both;
+}
 .bg {
-    padding: 2rem 1.5rem 1rem;
+    padding: 2rem 2rem 1rem;
     border-radius: 0.5rem;
     box-shadow: $shadow;
     overflow: hidden;
-
+    position: relative;
     &-white {
         background-color: $white;
     }
     &-darks {
         background-color: $color-gray-dark;
     }
+
+    &-gray {
+        background-color: $off-white;
+    }
+}
+
+.m-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: $white;
+    display: inline-block;
+    margin-top: -0.2rem;
+}
+
+.disable {
+    opacity: 0.3;
+    cursor: no-drop !important;
 }
