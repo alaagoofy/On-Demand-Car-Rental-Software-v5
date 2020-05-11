@@ -188,13 +188,13 @@ a:visited {
 
 @media only screen and (max-width: 56.25em) {
   .contain {
-    margin: 8rem 5rem 0 3.5rem;
+    margin: 8rem 3rem 0;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .contain {
-    margin: 8rem 3rem 0 1.5rem;
+    margin: 8rem 2rem 0;
   }
 }
 
@@ -418,6 +418,10 @@ a:visited {
 
 .bg-darks {
   background-color: #1F2531;
+}
+
+.bg-gray {
+  background-color: #f7f7f7;
 }
 
 .m-icon {
@@ -1008,6 +1012,12 @@ select.form-control {
   background-size: 1.3rem 1.3rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  select.form-control {
+    background-position: 93% center;
+  }
+}
+
 .input-group-append {
   position: absolute;
   top: 2.5rem;
@@ -1022,6 +1032,18 @@ select.form-control {
 
 .input-group-append ~ select.form-control {
   background-position: 80% center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .input-group-append ~ select.form-control {
+    background-position: 70% center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .input-group-append ~ select.form-control {
+    background-position: 80% center;
+  }
 }
 
 .input-group-text {
@@ -1188,6 +1210,13 @@ select.form-control {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .top-btns {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .top-btns a,
 .top-btns button {
   padding: 1rem 5rem;
@@ -1209,6 +1238,26 @@ select.form-control {
 
 .end-btns a,
 .end-btns button {
+  margin-left: 1rem;
+  padding: 1rem 5rem;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1rem;
+  width: 100%;
+  margin: 0.5rem 1rem 1rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #dbdde2;
+}
+
+.btns a,
+.btns button {
   margin-left: 1rem;
   padding: 1rem 5rem;
 }
@@ -1839,10 +1888,16 @@ button:disabled {
   padding: 2rem 0 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .rental-graph-header {
+    margin-top: 5rem;
+  }
+}
+
 .rental-graph-header-icon {
   width: 1.4rem;
   height: 1.4rem;
-  margin-top: -0.4rem;
+  margin-top: -0.2rem;
   fill: #fff;
 }
 
@@ -2279,6 +2334,18 @@ button:disabled {
           align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .credit-swip {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .credit-swip .form-group .form-control {
   width: 50%;
 }
@@ -2302,5 +2369,10 @@ button:disabled {
   background-color: #dbdde2;
   outline: 1px solid #858E9F;
   border-radius: 0.5rem;
+}
+
+.prev-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */

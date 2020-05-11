@@ -175,10 +175,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0 1rem;
+        @include responsive(phone) {
+            margin-top: 5rem;
+         }
         &-icon {
             width: 1.4rem;
             height: 1.4rem;
-            margin-top: -0.4rem;
+            margin-top: -0.2rem;
             fill: $white;
         }
     }

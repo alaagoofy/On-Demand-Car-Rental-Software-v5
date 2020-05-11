@@ -885,10 +885,11 @@
                                 <div class="end-btns mt-4">
                                     <button class="btn btn-default" id="customerLink" data-toggle="tab" href="#customer"
                                         role="tab" aria-controls="pcustomer" aria-selected="false">
+                                        next
                                         <svg class="rental-graph-header-icon">
                                             <use xlink:href="images/sprite.svg#icon-next"></use>
                                         </svg>
-                                        next</button>
+                                    </button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customerLink">
@@ -896,11 +897,15 @@
 
                                 </p>
 
-                                <div class="end-btns mt-5">
+                                <div class="btns mt-5">
 
-                                    <button class="btn btn-white">
-
-                                        Clear</button>
+                                    <button class="btn btn-default"
+                                    id="reservationLink" data-toggle="tab" href="#reservation"
+                                    role="tab" aria-controls="reservation" aria-selected="true">
+                                        <svg class="rental-graph-header-icon prev-icon">
+                                            <use xlink:href="images/sprite.svg#icon-next"></use>
+                                        </svg>
+                                        Back</button>
 
                                     <button class="btn btn-primary" disabled>
                                         Save
@@ -1013,7 +1018,7 @@
                                 </svg>
                                 Add Payment</button>
                         </div>
-
+                        <div class="stats-bottom"></div>
                     </div>
 
 
@@ -1022,9 +1027,9 @@
             </div>
 
 
-            <div class="row mt-5">
+            <div class="row">
                 <div class="col-md-7 col-sm-12 col-xs-12 ">
-                    <div class="rental-graph-header">
+                    <div class="rental-graph-header mt-5">
                         <h2 class="head-2">
                             OTHER CHARGES
                         </h2>
@@ -1257,7 +1262,7 @@
                 <div class="col-md-5 col-sm-12 col-xs-12">
 
 
-                    <div class="rental-graph-header">
+                    <div class="rental-graph-header mt-5">
                         <h2 class="head-2">
                             Reservation State
                         </h2>
@@ -1274,8 +1279,8 @@
                         </div>
 
                         <div class="checkbox">
-                            <input type="checkbox" id="Tentatvie" class="checkbox-input" name="Status">
-                            <label for="Tentatvie" class="checkbox-label">
+                            <input type="checkbox" id="Tentatvies" class="checkbox-input" name="Status">
+                            <label for="Tentatvies" class="checkbox-label">
                                 <span class="checkbox-btn checkbox-btn"></span>
                                 Tentatvie
                             </label>
@@ -1320,7 +1325,7 @@
                                 Is Loaner
                             </label>
                         </div>
-
+                        <div class="stats-bottom"></div>
 
                     </div>
                 </div>
