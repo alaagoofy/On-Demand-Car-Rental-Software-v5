@@ -54,7 +54,7 @@ a:visited {
 
 .contain {
     margin: 8rem 5rem 0 8.5rem;
-
+    min-height: calc(100vh - 10rem);
     @include responsive(tab-port) {
         margin: 8rem 5rem 0 3.5rem;
     }

@@ -10,7 +10,7 @@
         grid-template-columns: 1.6fr 2fr;
         grid-template-rows: min-content;
         align-items: start;
-        padding: 1.2rem 0 1.2rem 1.5rem;
+        padding: 1.2rem 0 1.2rem 0;
         gap: 3rem;
         margin-bottom: 0.5rem;
         &-height {
@@ -179,6 +179,7 @@
             width: 1.4rem;
             height: 1.4rem;
             margin-top: -0.4rem;
+            fill: $white;
         }
     }
 

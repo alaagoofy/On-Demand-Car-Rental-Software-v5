@@ -1,0 +1,244 @@
+.form-group {
+    margin: 0 0 2rem;
+    position: relative;
+    label,
+    span {
+        font-weight: 400;
+        color: $black;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+}
+
+.form-control {
+    height: 4rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    box-shadow: $shadow-input;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in-out;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    //-----------------------------------Clear Broser History Background
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-gray;
+        box-shadow: $shadow-input;
+    }
+
+    //-----------------------------------Invalid Input
+    &:focus:invalid {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $error;
+    }
+
+    //-----------------------------------Input Placeholder
+    &::-webkit-input-placeholder {
+        text-transform: uppercase;
+        color: $color-gray;
+        font-weight: 300;
+    }
+}
+
+select.form-control {
+    background: $white url(../images/arrow-down.png) no-repeat 97% center;
+    background-size: 1.3rem 1.3rem;
+}
+
+.input-group-append {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    height: 4.2rem;
+    width: 5rem;
+
+    & ~ .form-control {
+        padding-right: 5.2rem;
+    }
+    & ~ select.form-control {
+        background-position: 80% center;
+    }
+}
+
+.input-group-text {
+    width: 100%;
+    justify-content: center;
+    background-color: $color-gray-lighter;
+    border: 1px solid transparent;
+    border-left: 1px solid lighten($color-gray-light, 25%);
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-gray;
+        transition: all 0.3s ease-in;
+    }
+
+    &:hover {
+        border-left: 1px solid $color-gray-light;
+        svg {
+            fill: $color-primary;
+        }
+    }
+}
+
+.two-inputs {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 1.5rem;
+}
+
+.three-inputs {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    gap: 1.5rem;
+
+    select.form-control {
+        background-position: 85% center;
+    }
+}
+
+//-------------------------------checkboxs
+
+.checkboxs {
+
+    .checkbox {
+        padding: 1rem 0 0.5rem;
+    }
+}
+
+.checkbox {
+    margin-bottom: 0;
+    //-----------------------------------Hide Real Checkbox
+    &-input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    //-----------------------------------Checkbox Text
+    &-label {
+        position: relative;
+        display: block;
+        padding-left: 2.9rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        vertical-align: top;
+        &__icon {
+            width: 5.5rem;
+            height: 5.5rem;
+            padding: 0.5rem;
+            transform: translateY(-1.5rem);
+        }
+    }
+    //-----------------------------------Fake Checkbox
+    &-btn {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        left: 0;
+        border: 1px solid $color-gray-light;
+        border-radius: 0.3rem;
+        transition: all 0.5s ease-in;
+
+        //-----------------------------------RADIO BUTTON
+
+        //-----------------------------------Fake Checkbox Checked Style (Hidden)
+        &::before,
+        &::after {
+            @include after-before;
+            visibility: hidden;
+            border-radius: 0.3rem;
+        }
+        &::after {
+            height: 1.2rem;
+            width: 0.5rem;
+            transform: rotate(45deg);
+            top: 0.2rem;
+            left: 0.7rem;
+            border-bottom: 0.2rem solid $white;
+            border-right: 0.2rem solid $white;
+        }
+        &::before {
+            background-color: $color-primary;
+        }
+        &--radio,
+        &--radio::before {
+            border-radius: 50%;
+        }
+    }
+
+    &-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    //-----------------------------------Fake Checkbox Checked (SHOWN)
+    &-input:checked ~ &-label &-btn::before,
+    &-input:checked ~ &-label &-btn::after {
+        visibility: visible;
+    }
+
+    &-input:checked ~ &-label &-btn {
+        border: 1px solid transparent;
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+}
+
+.res-date {
+    justify-self: start;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    svg {
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-top: -0.4rem;
+    }
+}
+
+.top-btns {
+    display: grid;
+    grid-template-columns: 5fr repeat(2, max-content);
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    a,
+    button {
+        padding: 1rem 5rem;
+    }
+}
+
+.end-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1rem;
+    width: 100%;
+    margin:0.5rem 1rem 1rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid lighten($color-gray-light, 30%);
+    a,
+    button {
+        margin-left: 1rem;
+        padding: 1rem 5rem;
+    }
+}
+button:disabled {
+    opacity: 0.3 !important;
+    cursor: no-drop !important;
+}

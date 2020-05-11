@@ -183,6 +183,7 @@ a:visited {
 
 .contain {
   margin: 8rem 5rem 0 8.5rem;
+  min-height: calc(100vh - 10rem);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -393,12 +394,22 @@ a:visited {
   max-width: 100%;
 }
 
+.ruler {
+  width: 100%;
+  display: table;
+  height: 1px;
+  background-color: #dbdde2;
+  margin: 3rem 0;
+  clear: both;
+}
+
 .bg {
-  padding: 2rem 1.5rem 1rem;
+  padding: 2rem 2rem 1rem;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  position: relative;
 }
 
 .bg-white {
@@ -407,6 +418,19 @@ a:visited {
 
 .bg-darks {
   background-color: #1F2531;
+}
+
+.m-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: #fff;
+  display: inline-block;
+  margin-top: -0.2rem;
+}
+
+.disable {
+  opacity: 0.3;
+  cursor: no-drop !important;
 }
 
 .nav {
@@ -542,6 +566,16 @@ a:visited {
   background-color: #5AC41E;
 }
 
+.btn-white {
+  background-color: #fff;
+  color: #1F2531;
+}
+
+.btn-white::after {
+  background-color: #fff;
+  color: #1F2531;
+}
+
 .btn-default {
   background-color: #1F2531;
   color: #f3f5f7;
@@ -584,12 +618,20 @@ a:visited {
   border-collapse: collapse;
 }
 
+.table thead {
+  margin-bottom: 2rem;
+}
+
 .table th {
   text-transform: uppercase;
 }
 
-.table td {
-  padding: 1rem;
+.table td, .table th {
+  padding: 1.3rem 2rem;
+}
+
+.table td .checkbox {
+  margin-top: -0.4rem;
 }
 
 .table-icon {
@@ -602,6 +644,11 @@ a:visited {
   .table-icon {
     height: 1.7rem;
   }
+}
+
+.table .thead-dark th {
+  background-color: #1F2531;
+  border: none;
 }
 
 .drop {
@@ -856,6 +903,321 @@ li:hover > .drop-down-nav {
   border: none;
 }
 
+.nav-tabs {
+  width: 100%;
+  list-style: none;
+  background-color: #1F2531;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.nav-tabs a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+  padding: 1.3rem 4rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.nav-tabs li:hover a,
+.nav-tabs li a.active {
+  background-color: #fff;
+  color: #1F2531;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs:hover li:not(:hover) a {
+  background-color: transparent;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-content {
+  padding-top: 6.5rem;
+}
+
+.form-group {
+  margin: 0 0 2rem;
+  position: relative;
+}
+
+.form-group label,
+.form-group span {
+  font-weight: 400;
+  color: #1B202B;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.form-control {
+  height: 4rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  -webkit-box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.form-control:-webkit-autofill, .form-control:-webkit-autofill:hover, .form-control:-webkit-autofill:focus, .form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.form-control:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #707070;
+  -webkit-box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus:invalid {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #FD5E7C;
+}
+
+.form-control::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 300;
+}
+
+select.form-control {
+  background: #fff url(../images/arrow-down.png) no-repeat 97% center;
+  background-size: 1.3rem 1.3rem;
+}
+
+.input-group-append {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  height: 4.2rem;
+  width: 5rem;
+}
+
+.input-group-append ~ .form-control {
+  padding-right: 5.2rem;
+}
+
+.input-group-append ~ select.form-control {
+  background-position: 80% center;
+}
+
+.input-group-text {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f3f5f7;
+  border: 1px solid transparent;
+  border-left: 1px solid #ccd0d7;
+}
+
+.input-group-text svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #707070;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.input-group-text:hover {
+  border-left: 1px solid #858E9F;
+}
+
+.input-group-text:hover svg {
+  fill: #109CF6;
+}
+
+.two-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
+  gap: 1.5rem;
+}
+
+.three-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr 1fr;
+      grid-template-columns: 0.5fr 0.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.three-inputs select.form-control {
+  background-position: 85% center;
+}
+
+.checkboxs .checkbox {
+  padding: 1rem 0 0.5rem;
+}
+
+.checkbox {
+  margin-bottom: 0;
+}
+
+.checkbox-input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 2.9rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.checkbox-label__icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  padding: 0.5rem;
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+.checkbox-btn {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  left: 0;
+  border: 1px solid #858E9F;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.checkbox-btn::before, .checkbox-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 0.3rem;
+}
+
+.checkbox-btn::after {
+  height: 1.2rem;
+  width: 0.5rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0.2rem;
+  left: 0.7rem;
+  border-bottom: 0.2rem solid #fff;
+  border-right: 0.2rem solid #fff;
+}
+
+.checkbox-btn::before {
+  background-color: #109CF6;
+}
+
+.checkbox-btn--radio, .checkbox-btn--radio::before {
+  border-radius: 50%;
+}
+
+.checkbox-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.checkbox-input:checked ~ .checkbox-label .checkbox-btn::before,
+.checkbox-input:checked ~ .checkbox-label .checkbox-btn::after {
+  visibility: visible;
+}
+
+.checkbox-input:checked ~ .checkbox-label .checkbox-btn {
+  border: 1px solid transparent;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.res-date {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.res-date svg {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: -0.4rem;
+}
+
+.top-btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr (max-content)[2];
+      grid-template-columns: 5fr repeat(2, -webkit-max-content);
+      grid-template-columns: 5fr repeat(2, max-content);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.top-btns a,
+.top-btns button {
+  padding: 1rem 5rem;
+}
+
+.end-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 1rem;
+  width: 100%;
+  margin: 0.5rem 1rem 1rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #dbdde2;
+}
+
+.end-btns a,
+.end-btns button {
+  margin-left: 1rem;
+  padding: 1rem 5rem;
+}
+
+button:disabled {
+  opacity: 0.3 !important;
+  cursor: no-drop !important;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1029,6 +1391,7 @@ li:hover > .drop-down-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1050,7 +1413,34 @@ li:hover > .drop-down-nav {
 }
 
 .inner-header .title-icon {
-  width: 6rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  background-color: #109CF6;
+  border-radius: 0.5rem;
+  position: relative;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem #109cf6;
+          box-shadow: 0 0.5rem 1rem #109cf6;
+}
+
+.inner-header .title-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .inner-header .breadcrumbs {
@@ -1204,7 +1594,7 @@ li:hover > .drop-down-nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding: 1.2rem 0 1.2rem 1.5rem;
+  padding: 1.2rem 0 1.2rem 0;
   gap: 3rem;
   margin-bottom: 0.5rem;
 }
@@ -1453,6 +1843,7 @@ li:hover > .drop-down-nav {
   width: 1.4rem;
   height: 1.4rem;
   margin-top: -0.4rem;
+  fill: #fff;
 }
 
 .rental-graph-title {
@@ -1874,5 +2265,42 @@ li:hover > .drop-down-nav {
 .availability-top-btn {
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+.credit-swip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credit-swip .form-group .form-control {
+  width: 50%;
+}
+
+.other-charges {
+  height: 29.5rem;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+
+.other-charges::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.other-charges::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(243, 245, 247, 0.7);
+          box-shadow: inset 0 0 0.6rem rgba(243, 245, 247, 0.7);
+}
+
+.other-charges::-webkit-scrollbar-thumb {
+  background-color: #dbdde2;
+  outline: 1px solid #858E9F;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,19 @@
 .table {
     font-size: 1.3rem;
     border-collapse: collapse;
+    thead {
+        margin-bottom: 2rem;
+    }
     th {
         text-transform: uppercase;
+     
     }
 
-    td {
-        padding: 1rem;
+    td,th {
+        padding: 1.3rem 2rem;
+    }
+    td .checkbox {
+        margin-top: -0.4rem;
     }
     &-icon {
         height: 2rem;
@@ -15,6 +22,11 @@
         @include responsive(phone) {
             height: 1.7rem;
         }
+    }
+
+    .thead-dark th {
+        background-color: $color-gray-dark;
+        border: none;
     }
 }
 
