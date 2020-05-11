@@ -2,7 +2,7 @@
 
 *HTML5
 
-*SCSS
+*SCSS (Grid & Flexboxs)
 
 *Bootstrap
 
