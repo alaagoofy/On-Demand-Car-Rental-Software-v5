@@ -34,3 +34,44 @@
 .prev-icon {
     transform: rotate(180deg);
 }
+
+.quick-details {
+    margin-bottom: 2rem;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, max-content));
+    gap: 1.5rem;
+    &__item {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        background-color: $white;
+        padding: 1rem 1.5rem 0.5rem;
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+        position: relative;
+        text-align: center;
+
+        strong {
+            display: block;
+            font-size: 2.5rem;
+        }
+        .all {
+            color: $color-primary;
+        }
+    }
+
+}
+
+.btn-section {
+    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   margin-top: 2rem;
+    float: right;
+    .btn {
+        margin-bottom: 1rem;
+
+    }
+}
