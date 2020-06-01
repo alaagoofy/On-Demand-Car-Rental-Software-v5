@@ -47,6 +47,19 @@
         }
     }
 
+    &-gray {
+        background-color: $color-gray-lighter;
+        color: $color-gray-dark;
+
+        &::after {
+            background-color: $color-gray-lighter;
+            color: $color-gray-dark;
+        }
+        svg {
+            fill: $color-gray-light;
+        }
+    }
+
     &-default {
         background-color: $color-gray-dark;
         color: $color-gray-lighter;
@@ -72,12 +85,16 @@
 
 .link {
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     &-success {
         color: $color-secondary;
     }
 
     &-danger {
         color: $error;
+    }
+
+    &-warning {
+        color: $warning;
     }
 }

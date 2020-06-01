@@ -6,10 +6,10 @@
     }
     th {
         text-transform: uppercase;
-     
     }
 
-    td,th {
+    td,
+    th {
         padding: 1.3rem 2rem;
     }
     td .checkbox {
@@ -24,10 +24,156 @@
         }
     }
 
-    .thead-dark th {
-        background-color: $color-gray-dark;
-        border: none;
+    .thead {
+        th {
+            border: none;
+            font-size: 1.2rem;
+        }
+
+        th:first-child {
+            border-top-left-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
+        }
+        th:last-child {
+            border-top-right-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+        }
+
+        &-gray th {
+            background-color: $color-gray-lighter;
+        }
+
+        &-dark th {
+            background-color: $color-gray-dark;
+        }
     }
 }
 
+.top-table {
+    padding: 0.5rem 2rem;
+    background-color: lighten($color-gray-light, 30%);
+    margin-bottom: -0.5rem;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.search-area {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-icon {
+    position: relative;
+
+    &__input {
+        z-index: 2;
+        padding-right: 3rem;
+        width: 80%;
+        &::placeholder {
+            font-size: 1.2rem;
+        }
+
+        &:focus {
+            width: 100%;
+        }
+    }
+    &__input:focus + &__button {
+        right: 2%;
+    }
+
+    &__button {
+        position: absolute;
+        top: 0.8rem;
+        right: 22%;
+        z-index: 3;
+
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 1rem;
+    justify-content: end;
+    .btn {
+        padding: 1rem 1.5rem;
+    }
+    &-bottom {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    strong {
+        text-transform: uppercase;
+    }
+    a {
+        display: inline-block;
+        padding: 1rem;
+        font-weight: 600;
+        color: $black;
+        font-size: 1.2rem;
+        svg {
+            fill: $color-gray-dark;
+        }
+    }
+}
+
+.pager-arrows {
+    @include center-el;
+    align-items: stretch;
+    margin: -0.5rem 0;
+    margin-right: -2rem;
+    border-top-right-radius: 0.5rem;
+
+    & a {
+        display: inline-block;
+
+        height: 100%;
+        width: 5rem;
+        @include center-el;
+
+        svg {
+            width: 1.7rem;
+            height: 1.7rem;
+            fill: $color-gray-light;
+        }
+
+        &:hover {
+            background-color: $color-gray-light;
+            svg {
+                fill: $white;
+            }
+        }
+    }
+    & div {
+        border: 1px solid lighten($color-gray-light, 25%);
+        &:last-child {
+            border-left: none;
+        }
+    }
+}
+
+.table-items {
+    padding: 1rem 0 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    a {
+        font-size: 1.4rem;
+    }
+
+}
