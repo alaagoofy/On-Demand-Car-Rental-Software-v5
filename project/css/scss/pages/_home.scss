@@ -2,7 +2,7 @@
     padding: 1.2rem 0;
     @include responsive(phone) {
         .breadcrumbs {
-            display: none;
+           // display: none;
         }
     }
     &-row {

@@ -112,8 +112,8 @@
 }
 
 .inner-header {
-    display: flex;
-    justify-content: space-between;
+  //  display: flex;
+    //justify-content: space-between;
     margin-bottom: 2rem;
     @include responsive(phone) {
         flex-direction: column;
@@ -147,9 +147,9 @@
     }
 
     .breadcrumbs {
-        justify-self: flex-end;
+       // justify-self: flex-end;
 
-        @include center-el;
+        //@include center-el;
         //-----------------------------------Responsive
         @include responsive(tab-port) {
             justify-content: flex-start;

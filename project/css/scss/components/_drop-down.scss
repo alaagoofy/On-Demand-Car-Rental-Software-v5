@@ -230,8 +230,8 @@ li:hover > .drop-down-nav {
     }
   }
   &-small {
-    border-top: 3px solid $color-primary;
     background-color: $white;
+    border: 1px solid $color-gray-lighter;
     max-height: 35rem;
     overflow-y: auto;
     min-width: 5rem;
@@ -254,6 +254,15 @@ li:hover > .drop-down-nav {
       border-bottom: 1px solid lighten($color-gray-light, 30%);
       color: $color-gray-darker;
       font-size: 1.4rem;
+      background: none;
+      &:hover {
+        color: $black;
+        transform: none;
+        box-shadow: none;
+        background: none;
+      border-bottom: 1px solid $color-gray-light;
+
+      }
     }
   }
 }
