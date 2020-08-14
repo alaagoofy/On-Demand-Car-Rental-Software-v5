@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rent Centric, On-Demand Car Rental Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Nunito Sans Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+
+
+
+    <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="css/main.css?ver=1.0.0" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/rc-icon.png">
+
+</head>
+
+<body>
+    <!------------------------Top Header-->
+    <header class="header">
+        <!--Left Section-->
+        <div class="header__logo">
+
+            <!--Menu Icon-->
+            <div class="menu-icon">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-menu_icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--Menu Logo-->
+            <a href="index.html">
+                <img src="images/logo.png" class="logo-img" alt="Rent Centric" />
+            </a>
+        </div>
+
+        <!--Middle Section-->
+        <div class="header__quick-links">
+            <!--Search-->
+            <a href="#">
+                <svg>
+                    <use xlink:href="images/sprite.svg#icon-search-white"></use>
+                </svg>
+            </a>
+            <!--Quick Links-->
+            <div class="drop">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-add"></use>
+                    </svg>
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down">
+                    <div class="arrow-up"></div>
+                    <ul class="drop-down__menu">
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-reservations"></use>
+                                </svg>
+                                Make Reservation</a>
+                        </li>
+
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg class="car_rental">
+                                    <use xlink:href="images/sprite.svg#icon-car"></use>
+                                </svg>
+                                Start Rental</a>
+                        </li>
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-add-task"></use>
+                                </svg>
+                                Add Task</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Profile-->
+            <a href="#">
+                <svg>
+                    <use xlink:href="images/sprite.svg#icon-user"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <!--Right Section-->
+        <div class="header__right-links">
+            <!--Location-->
+            <div class="location dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <svg class="location-icon">
+                        <use xlink:href="images/sprite.svg#icon-pin-white"></use>
+                    </svg>
+                    <span>United - Spring Valley</span>
+                    <svg class="drop-down-arrow">
+                        <use xlink:href="images/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Toronto Spring vally</a></li>
+                    <li><a href="#" class="active">United - Spring Valley</a></li>
+                    <li><a href="#">Canada - vally</a></li>
+                </ul>
+            </div>
+            <!--Help-->
+            <div class="help" title="Help">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-question"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--Quick Menu-->
+            <div class="quick-menu">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-more"></use>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!------------------------Navigation-->
+    <nav class="nav">
+        <ul class="menu">
+            <!--------------Dashboard-->
+            <li>
+                <a href="#" class="menu-link" title="dashboard">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Dashboard </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Quotes-->
+            <li>
+                <a href="#" class="menu-link" title="Quotes">
+                    <img src="images/quotes.png" alt="Quotes">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Quotes </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Reservations-->
+            <li>
+                <a href="#" class="menu-link active" title="Reservations">
+                    <img src="images/res.png" alt="Reservations">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Reservations </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Rentals-->
+            <li>
+                <a href="#" class="menu-link" title="Rentals">
+                    <img src="images/rentals.png" class="rentals" alt="rentals">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Rentals </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Vehicles-->
+            <li>
+                <a href="#" class="menu-link" title="Vehicles">
+                    <img src="images/vehicles.png" class="vehicles" alt="Vehicles">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Vehicles </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Customers-->
+            <li>
+                <a href="#" class="menu-link" title="Customers">
+                    <img src="images/customers.png" alt="Customers">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Customers </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Reports-->
+            <li>
+                <a href="#" class="menu-link" title="Reports">
+                    <img src="images/reports.png" alt="Reports">
+                </a>
+
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link arrow-right">
+                                Vehicles Reports </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav multi">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Vehicles Summary </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Vehicle Utilization (Today) </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Fleet Utilization History </a>
+                                    </li>
+
+                                   
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Customers Reports </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Rentals & Reservations Reports </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Management Reports Reports </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </li>
+            <!--------------Settings-->
+            <li>
+                <a href="#" class="menu-link" title="Settings">
+                    <img src="images/settings.png" alt="Settings">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav multi">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Location Information </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Users </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Rates </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav multi">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Company </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Import Data and Other Tools
+                            </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Payment Settings </a>
+                        </li>
+
+                       
+                    </ul>
+                </div>
+            </li>
+
+            <!--------------Logout-->
+            <li class="logout">
+                <a href="#" class="menu-link" title="Logout">
+                    <img src="images/logout.png" alt="Logout">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Logout </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!------------------------Main Container-->
+    <div class="contain">
+
+
+        <!--------------------------------------HOME-->
+        <div class="home">
+            <!------------------Inner Header-->
+            <div class="inner-header">
+
+
+                <!-------------------Breadcrumb-->
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-home"></use>
+                                </svg>
+                                Dashboard</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link active">
+
+                                Reservations</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!----------------Title-->
+                <div class="title">
+                    <i class="title-icon"></i>
+                    <!-- <img src="images/head-icon.png" class="title-icon"> -->
+                    <h1 class="head-1 title-head">
+                        Reservations
+
+                    </h1>
+                </div>
+
+            </div>
+
+            <!----------------Top Action Buttons-->
+            <div class="row">
+                <div class="action-btns">
+                    <ul class="action-btns__list">
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                </svg>
+                                Delete
+                            </a>
+                        </li>
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-edit"></use>
+                                </svg>
+                                Edit
+                            </a>
+                        </li>
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-dublicte"></use>
+                                </svg>
+                                Dublicate
+                            </a>
+                        </li>
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-move"></use>
+                                </svg>
+                                Move
+                            </a>
+                        </li>
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-rejected"></use>
+                                </svg>
+                                Cancel
+                            </a>
+                        </li>
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link btn btn-success start">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-accepted"></use>
+                                </svg>
+                                Start Rental
+                            </a>
+                        </li>
+                        <li>
+                          <a data-toggle="dropdown"> <span class="sub-actions"></span></a> 
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Reservation details</a></li>
+                                <li><a href="#">Payments/Charges <span class="link">(1)</span></a></li>
+                                <li><a href="#">Additional Drivers <span class="link">(0)</span></a></li>
+                                <li><a href="#">Print Invoice</a></li>
+                                <li><a href="#">Print Reservation Detail</a></li>
+                                <li><a href="#">Bill Split</a></li>
+                                <li><a href="#">Pickup/Drop-off <span class="link">(0)</span></a></li>
+                                <li><a href="#">Associated Rental</a></li>
+                                <li><a href="#">E-Mail Reservation Details</a></li>
+                                <li><a href="#">Reservation History</a></li>
+                                <li><a href="#">Technical Log</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--------------------------------------------------------CONTENT-->
+            <div class="row">
+                <!--------------------------------------------------------Reservation Details-->
+                <div class="col-md-6 col-xs-12">
+                    <div class="bg bg-white res-details">
+                        <div class="row">
+                            <div class="col-md-7 col-xs-12">
+                                <ul class="res-details-list">
+                                    <li class="res-details-item">
+                                        <strong>Status:</strong>
+                                        <span class="link-danger">
+                                            Cancelled!
+                                            <svg>
+                                                <use xlink:href="images/sprite.svg#icon-rejected"></use>
+                                            </svg>
+                                        </span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Vehicle:</strong>
+                                        <span>Bobcat T450</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Vehicle type:</strong>
+                                        <span>Skid-steer T 450</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Entered By:</strong>
+                                        <span>Jonathan Edward</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Company:</strong>
+                                        <span>Rent Centric</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--------------------------------------------------------Pickup-->
+                            <div class="col-md-5 col-xs-12">
+                                <div class="pick">
+                                    <div class="pick-icons">
+                                        <div class="pick-icons-up"></div>
+                                        <div class="pick-icons-line"></div>
+                                        <div class="pick-icons-drop"></div>
+                                    </div>
+                                    <div class="pick-data">
+                                        <div class="pick-data-up">
+                                            <h6 class="head head-6">
+                                                Pickup
+                                            </h6>
+                                            <strong>
+                                                <svg>
+                                                    <use xlink:href="images/sprite.svg#icon-flag"></use>
+                                                </svg>
+                                                Hamilton</strong>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/sprite.svg#icon-clock2"></use>
+                                                </svg>
+                                                5/12/2020 10:51 PM
+                                            </span>
+                                        </div>
+                                        <div class="pick-data-drop">
+                                            <h6 class="head head-6">
+                                                Drop-off
+                                            </h6>
+                                            <strong>
+                                                <svg>
+                                                    <use xlink:href="images/sprite.svg#icon-flag"></use>
+                                                </svg>
+                                                Hamilton</strong>
+                                            <span>
+                                                <svg>
+                                                    <use xlink:href="images/sprite.svg#icon-clock2"></use>
+                                                </svg>
+                                                5/12/2020 10:51 PM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="ruler m-0"></div>
+                        <div class="memo">
+
+                            <div class="form-group">
+                                <label>Memo</label>
+                                <textarea name="" id="" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="end-btns mt-5">
+                                <button class="btn btn-success">
+                                    Save
+                                    <svg class="rental-graph-header-icon">
+                                        <use xlink:href="images/sprite.svg#icon-save"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--------------------------------------------------------Charges Summary-->
+                <div class="col-md-6 col-xs-12">
+                    <div class="bg bg-white">
+                        <div class="charges-summary">
+                            <div class="charges-summary-total">
+                                <strong>Total</strong>
+                                <h1 class="head head-1">
+                                    $2,716.35
+                                </h1>
+                            </div>
+
+                            <a href="" class="charges-summary-print">
+                                <svg class="rental-graph-header-icon">
+                                    <use xlink:href="images/sprite.svg#icon-print"></use>
+                                </svg>
+                                Print charges summary
+                            </a>
+
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead class="thead thead-gray">
+                                <tr>
+                                    <th>Charge</th>
+                                    <th>Unit</th>
+                                    <th>Rate</th>
+                                    <th class="text-right">total</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Daily</td>
+                                    <td>1</td>
+                                    <td>$199.00 </td>
+                                    <td class="text-right"> $199.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Monthly</td>
+                                    <td>1</td>
+                                    <td>$2,388.00	 </td>
+                                    <td class="text-right"> $2,388.00	</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Miles Allowed	</td>
+                                    <td>Unlimited</td>
+                                    <td></td>
+                                    <td class="text-right"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Total T&M	</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right"> $2,388.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Options Total	</td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td class="text-right"> $199.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sub Total</td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td class="text-right"> $2,716.35 </td>
+                                </tr>
+
+                                <tr>
+                                    
+                                    <td><strong>Total</strong></td>
+                                    <td></td>
+                                    <td> </td>
+                                    <td class="text-right"> $2,716.35 </td>
+                                </tr>
+
+                                <tr>
+                                    
+                                    <td><strong>Visa XXXX4101(A)</strong></td>
+                                    <td> Auth:456	</td>
+                                    <td> </td>
+                                    <td class="text-right"> $2,716.35 </td>
+                                </tr>
+
+                                <tr>
+                                    
+                                    <td><strong>Total Payments</strong></td>
+                                    <td> 	</td>
+                                    <td> </td>
+                                    <td class="text-right"> $0.00 </td>
+                                </tr>
+
+                                <tr>
+                                    
+                                    <td><strong>Balance</strong></td>
+                                    <td> 	</td>
+                                    <td> </td>
+                                    <td class="text-right"> $2,716.35 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!------------------------Footer-->
+    <footer class="footer">
+        <p>
+            © Copyright 2020 <a> Rent Centric </a>Inc. All rights reserved
+        </p>
+    </footer>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
