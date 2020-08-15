@@ -1,0 +1,858 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>KIA Rio (Y89-27Rio2017#84)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Nunito Sans Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+
+
+
+    <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="css/main.css?ver=1.0.0" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/rc-icon.png">
+
+</head>
+
+<body>
+    <!------------------------Top Header-->
+    <header class="header">
+        <!--Left Section-->
+        <div class="header__logo">
+
+            <!--Menu Icon-->
+            <div class="menu-icon">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-menu_icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--Menu Logo-->
+            <a href="index.html">
+                <img src="images/logo.png" class="logo-img" alt="Rent Centric" />
+            </a>
+        </div>
+
+        <!--Middle Section-->
+        <div class="header__quick-links">
+            <!--Search-->
+            <a href="#">
+                <svg>
+                    <use xlink:href="images/sprite.svg#icon-search-white"></use>
+                </svg>
+            </a>
+            <!--Quick Links-->
+            <div class="drop">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-add"></use>
+                    </svg>
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down">
+                    <div class="arrow-up"></div>
+                    <ul class="drop-down__menu">
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-reservations"></use>
+                                </svg>
+                                Make Reservation</a>
+                        </li>
+
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg class="car_rental">
+                                    <use xlink:href="images/sprite.svg#icon-car"></use>
+                                </svg>
+                                Start Rental</a>
+                        </li>
+                        <li class="drop-down__item">
+                            <a href="#" class="drop-down__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-add-task"></use>
+                                </svg>
+                                Add Task</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Profile-->
+            <a href="#">
+                <svg>
+                    <use xlink:href="images/sprite.svg#icon-user"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <!--Right Section-->
+        <div class="header__right-links">
+            <!--Location-->
+            <div class="location dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <svg class="location-icon">
+                        <use xlink:href="images/sprite.svg#icon-pin-white"></use>
+                    </svg>
+                    <span>United - Spring Valley</span>
+                    <svg class="drop-down-arrow">
+                        <use xlink:href="images/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Toronto Spring vally</a></li>
+                    <li><a href="#" class="active">United - Spring Valley</a></li>
+                    <li><a href="#">Canada - vally</a></li>
+                </ul>
+            </div>
+            <!--Help-->
+            <div class="help" title="Help">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-question"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--Quick Menu-->
+            <div class="quick-menu">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-more"></use>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!------------------------Navigation-->
+    <nav class="nav">
+        <ul class="menu">
+            <!--------------Dashboard-->
+            <li>
+                <a href="#" class="menu-link" title="dashboard">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Dashboard </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Quotes-->
+            <li>
+                <a href="#" class="menu-link" title="Quotes">
+                    <img src="images/quotes.png" alt="Quotes">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Quotes </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Reservations-->
+            <li>
+                <a href="#" class="menu-link active" title="Reservations">
+                    <img src="images/res.png" alt="Reservations">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Reservations </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Rentals-->
+            <li>
+                <a href="#" class="menu-link" title="Rentals">
+                    <img src="images/rentals.png" class="rentals" alt="rentals">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Rentals </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Vehicles-->
+            <li>
+                <a href="#" class="menu-link" title="Vehicles">
+                    <img src="images/vehicles.png" class="vehicles" alt="Vehicles">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Vehicles </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Customers-->
+            <li>
+                <a href="#" class="menu-link" title="Customers">
+                    <img src="images/customers.png" alt="Customers">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Customers </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!--------------Reports-->
+            <li>
+                <a href="#" class="menu-link" title="Reports">
+                    <img src="images/reports.png" alt="Reports">
+                </a>
+
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link arrow-right">
+                                Vehicles Reports </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav multi">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Vehicles Summary </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Vehicle Utilization (Today) </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Fleet Utilization History </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Customers Reports </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Rentals & Reservations Reports </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Management Reports Reports </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </li>
+            <!--------------Settings-->
+            <li>
+                <a href="#" class="menu-link" title="Settings">
+                    <img src="images/settings.png" alt="Settings">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav multi">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Location Information </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Users </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Rates </a>
+                            <!------------------------------DROP DOWN-->
+                            <div class="drop-down-nav multi">
+                                <div class="arrow-left"></div>
+                                <ul class="drop-down-nav__menu  dark">
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Offsite Locations </a>
+                                    </li>
+
+                                    <li class="drop-down-nav__item">
+                                        <a href="#" class="drop-down-nav__link">
+                                            Customer Areas/Regions </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Company </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Import Data and Other Tools
+                            </a>
+                        </li>
+
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link  arrow-right">
+                                Payment Settings </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+
+            <!--------------Logout-->
+            <li class="logout">
+                <a href="#" class="menu-link" title="Logout">
+                    <img src="images/logout.png" alt="Logout">
+                </a>
+                <!------------------------------DROP DOWN-->
+                <div class="drop-down-nav">
+                    <div class="arrow-left"></div>
+                    <ul class="drop-down-nav__menu">
+                        <li class="drop-down-nav__item">
+                            <a href="#" class="drop-down-nav__link">
+                                Logout </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!------------------------Main Container-->
+    <div class="contain">
+
+
+        <!--------------------------------------HOME-->
+        <div class="home">
+            <!------------------Inner Header-->
+            <div class="inner-header">
+
+
+                <!-------------------Breadcrumb-->
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-home"></use>
+                                </svg>
+                                Dashboard</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">
+
+                                Vehicles</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link active">
+
+                                KIA Rio (Y89-27Rio2017#84)</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!----------------Title-->
+                <div class="title">
+                    <i class="title-icon"></i>
+                    <!-- <img src="images/head-icon.png" class="title-icon"> -->
+                    <h1 class="head-1 title-head">
+                        KIA Rio (Y89-27Rio2017#84)
+
+                    </h1>
+                </div>
+
+            </div>
+
+            <!----------------Top Action Buttons-->
+            <div class="row">
+                <div class="action-btns">
+                    <ul class="action-btns__list">
+                        <li class="action-btns__item ">
+                            <a href="#"  data-toggle="dropdown" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-print"></use>
+                                </svg>
+                                Print
+                       <img src="images/arrow-down.png" alt="" class="icon">
+                            </a>
+                            <ul class="dropdown-menu">
+                               
+                                <li><a href="#">Print Invoice</a></li>
+                                <li><a href="#">Print Reservation Detail</a></li>
+                           
+
+                            </ul>
+                        </li>
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                </svg>
+                                Delete
+                            </a>
+                        </li>
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-edit"></use>
+                                </svg>
+                                Edit
+                            </a>
+                        </li>
+                    
+                    
+
+
+                        <li class="action-btns__item">
+                            <a href="#" class="action-btns-link pr-0">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#icon-rejected"></use>
+                                </svg>
+                                Deactivate
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a data-toggle="dropdown"> <span class="sub-actions"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Reservation details</a></li>
+                                <li><a href="#">Payments/Charges <span class="link">(1)</span></a></li>
+                                <li><a href="#">Additional Drivers <span class="link">(0)</span></a></li>
+                                <li><a href="#">Print Invoice</a></li>
+                                <li><a href="#">Print Reservation Detail</a></li>
+                                <li><a href="#">Bill Split</a></li>
+                                <li><a href="#">Pickup/Drop-off <span class="link">(0)</span></a></li>
+                                <li><a href="#">Associated Rental</a></li>
+                                <li><a href="#">E-Mail Reservation Details</a></li>
+                                <li><a href="#">Reservation History</a></li>
+                                <li><a href="#">Technical Log</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--------------------------------------------------------CONTENT-->
+            <div class="row pl-3">
+                <!--------------------------------------------------------Reservation Details-->
+                <div class="col-md-8 col-xs-12">
+                    <div class="bg bg-white res-details">
+                        <div class="row m-2">
+                            <div class="col-md-7 col-xs-12">
+                                <div class="vehicleImg">
+                                    <img src="images/car.png" alt="Vehicle Image" class="vehicleImg-img">
+                                   <!-- <img src="images/no-car.png" alt="Vehicle Image" class="vehicleImg-img">-->
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xs-12">
+                                <div class="car-bars">
+
+                                    <div class="car-bars-fuel">
+
+                                        <div class="car-bars-fuel__icon">
+                                            <svg>
+                                                <use xlink:href="images/sprite.svg#icon-fuel"></use>
+                                            </svg>
+                                        </div>
+
+                                        <div class="car-bars-fuel__bar">
+                                            <div class="car-bars-fuel__bar-tooltip" style="left:50%">50%</div>
+                                            <div class="car-bars-fuel__bar-progress">
+                                                <!--progress-success  |  progress-warning  |  progress-alert-->
+                                                <div class="progress progress-warning" style="width:50%"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="car-bars-odo">
+
+                                        <h3 class="head-3 text-center">odometer</h3>
+                                        <div class="fancy_title">227800</div>
+                                        <p class="text-primary text-center mt-2">Mileage</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5 pl-3">
+                            <div class="col-md-6 col-xs-12">
+                                <ul class="res-details-list">
+                                    <li class="res-details-item">
+                                        <strong>Current Status:</strong>
+                                        <span class="link-success">
+                                            Available
+                                            <svg class="success">
+                                                <use xlink:href="images/sprite.svg#icon-accept"></use>
+                                            </svg>
+                                        </span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Year:</strong>
+                                        <span>2020</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Vehicle type:</strong>
+                                        <span>Skid-steer T 450</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Entered By:</strong>
+                                        <span>Jonathan Edward</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Company:</strong>
+                                        <span>Rent Centric</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6 col-xs-12">
+                                <ul class="res-details-list">
+
+                                    <li class="res-details-item">
+                                        <strong>Vehicle:</strong>
+                                        <span>Bobcat T450</span>
+                                    </li>
+                                    <li class="res-details-item">
+                                        <strong>Vehicle:</strong>
+                                        <span>Bobcat T450</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Current Location:</strong>
+                                        <span>(P) Hamilton</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Entered By:</strong>
+                                        <span>Jonathan Edward</span>
+                                    </li>
+
+                                    <li class="res-details-item">
+                                        <strong>Company:</strong>
+                                        <span>Rent Centric</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="ruler m-0"></div>
+                        <div class="memo pl-3">
+
+                            <div class="form-group">
+                                <label>Note</label>
+                                <textarea name="" id="" rows="4" class="form-control"
+                                    placeholder="Leave your note here..."></textarea>
+                            </div>
+                            <div class="end-btns mt-5">
+                                <button class="btn btn-primary">
+                                    Save
+                                    <svg class="rental-graph-header-icon">
+                                        <use xlink:href="images/sprite.svg#icon-save"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------------Charges Summary-->
+                <div class="col-md-4 col-xs-12">
+                    <div class="bg bg-white">
+                        <div class="navs">
+                            <ul class="nav nav-pills">
+                                <li><a href="#home" class="active">upload Images / Files</a></li>
+
+                            </ul>
+
+                            <div class="tab-content pt-5">
+                                <div id="home" class="tab-pane fade in active">
+
+
+                                    <div class="drag-drop">
+                                        <div class="drag-hover"></div>
+                                        <input type="file" multiple>
+                                        <p class="text-center">
+                                            <svg>
+                                                <use xlink:href="images/sprite.svg#icon-upload"></use>
+                                            </svg><br>
+                                            Drag your files here or click in this area.</p>
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary pull-right">Add Images</button>
+
+                                    <div class="clearfix"></div>
+                                    <ul class="imgs-list">
+                                        <li class="imgs-list__item">
+                                            <img src="images/car-small.png" alt="car" class="imgs-list__img">
+                                            <p>Image-name.jpg</p>
+                                            <a class="tool" data-tip="View" tabindex="1"> <svg class="imgs-list__view">
+                                                <use xlink:href="images/sprite.svg#icon-eye"></use>
+                                            </svg></a> 
+                                           
+                                            <a class="tool" data-tip="Delete" tabindex="1">
+                                                <svg class="imgs-list__delete">
+                                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li class="imgs-list__item">
+                                            <img src="images/pdf.png" alt="car" class="imgs-list__img">
+                                            <p>Image-name.pdf</p>
+                                            <a class="tool" data-tip="View" tabindex="1"> <svg class="imgs-list__view">
+                                                <use xlink:href="images/sprite.svg#icon-eye"></use>
+                                            </svg></a> 
+                                           
+                                            <a class="tool" data-tip="Delete" tabindex="1">
+                                                <svg class="imgs-list__delete">
+                                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li class="imgs-list__item">
+                                            <img src="images/car-small.png" alt="car" class="imgs-list__img">
+                                            <p>Image-name.jpg</p>
+                                            <a class="tool" data-tip="View" tabindex="1"> <svg class="imgs-list__view">
+                                                <use xlink:href="images/sprite.svg#icon-eye"></use>
+                                            </svg></a> 
+                                           
+                                            <a class="tool" data-tip="Delete" tabindex="1">
+                                                <svg class="imgs-list__delete">
+                                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li class="imgs-list__item">
+                                            <img src="images/car-small2.png" alt="car" class="imgs-list__img">
+                                            <p>Image-name.jpg</p>
+                                            <a class="tool" data-tip="View" tabindex="1"> <svg class="imgs-list__view">
+                                                <use xlink:href="images/sprite.svg#icon-eye"></use>
+                                            </svg></a> 
+                                           
+                                            <a class="tool" data-tip="Delete" tabindex="1">
+                                                <svg class="imgs-list__delete">
+                                                    <use xlink:href="images/sprite.svg#icon-delete"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        
+
+                                     
+</ul>
+
+                                </div>
+                            </div>
+                        
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <!------------------------Footer-->
+    <footer class="footer">
+        <p>
+            © Copyright 2020 <a> Rent Centric </a>Inc. All rights reserved
+        </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.lettering-0.6.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancy_title").lettering();
+        });
+    </script>
+
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".nav-pills a").click(function () {
+                $(this).tab('show');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.drag-drop input').change(function () {
+                $('.drag-drop p').text(this.files.length + " file(s) selected");
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

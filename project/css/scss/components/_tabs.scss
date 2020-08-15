@@ -34,3 +34,47 @@
 .tab-content {
     padding-top: 6.5rem;
 }
+
+//----------------------------------------Second TABS
+
+.tab-pane {
+    position: relative;
+}
+.navs .nav {
+    position: relative;
+    width: auto;
+    top: auto;
+    left: auto;
+}
+
+.nav-pills {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    justify-content: stretch;
+    border-bottom: 1px solid rgba($color-gray-light, 0.2);
+    li {
+     
+        a {
+            display: block;
+            padding: 1rem 2.5rem;
+            text-transform: uppercase;
+            color: $color-gray-dark;
+            &:hover {
+                color: $color-primary;
+            }
+
+            &.active {
+                background-color: $color-primary;
+               
+                    color: $white;
+                    &:hover {
+                        color: $off-white;
+                   
+                }
+            }
+
+
+        }
+    }
+}
