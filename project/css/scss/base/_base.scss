@@ -13,13 +13,13 @@ html {
     //------------------------------responsive
 
     @include responsive(tab-land) {
-        font-size: 56.25%;
+        font-size: 54.25%;
     }
     @include responsive(tab-port) {
-        font-size: 52%;
+        font-size: 50%;
     }
     @include responsive(big-desktop) {
-        font-size: 92%;
+        font-size: 62%;
     }
 }
 
